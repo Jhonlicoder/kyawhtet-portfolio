@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="google-site-verification" content="google7aad9500c4f83cb4.html">
+
+    <title>Kyaw Htet - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
+            color: white;
+            padding: 20px;
+            animation: fadeIn 1s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #2a2a2a;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 15px rgba(0, 170, 255, 0.5);
+            animation: slideUp 1s ease-out;
+            position: relative;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: -3px;
+            background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+            background-size: 600% 600%;
+            z-index: -1;
+            border-radius: 18px;
+            animation: borderGlow 10s linear infinite;
+        }
+        @keyframes borderGlow {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes slideUp {
+            from { transform: translateY(20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+        .greeting {
+            font-size: 22px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            background: linear-gradient(270deg, #ff0044, #00ff99, #0044ff, #ffff00, #ff00cc);
+            background-size: 1000% 1000%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: rainbowText 8s ease infinite;
+        }
+        @keyframes rainbowText {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .profile-image img, .your-photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #ffcc00;
+            box-shadow: 0 0 15px rgba(255, 204, 0, 0.8);
+            margin-top: 10px;
+        }
+        .your-photo img {
+            width: 200px;
+            height: 200px;
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 50%;
+            transition: transform 0.3s, box-shadow 0.3s;
+            animation: float 3s ease-in-out infinite, rotate 4s linear infinite;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        .icon.photoshop { background: linear-gradient(45deg, #001d34, #31a8ff); }
+        .icon.illustrator { background: linear-gradient(45deg, #330000, #ff9a00); }
+        .icon.indesign { background: linear-gradient(45deg, #4e0000, #ff3b53); }
+        .icon.premiere { background: linear-gradient(45deg, #000033, #9999ff); }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #bbb;
+        }
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .contact-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s;
+        }
+        .contact-icons img:hover {
+            transform: scale(1.1);
+        }
+        a {
+            color: #00ffaa;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="greeting">
+            <h1>Warm Greetings, Dear Visitor 👋</h1>
+            <p>Wishing you peace of mind, good health,</p>
+            <p>and may your success and prosperity flourish.</p>
+        </div>
+
+        <div class="profile-image">
+            <img src="https://assets.onecompiler.app/437uxw29r/437zabyrs/End-logo%20red.png" alt="Kyaw Htet Logo">
+        </div>
+        <h1>Kyaw Htet</h1>
+        <p>Graphic Designer | Founder of Design Studio</p>
+
+        <div class="your-photo">
+            <img src="https://assets.onecompiler.app/437uxw29r/437y74acw/photo_2025-01-24_20-43-48.jpg" alt="Kyaw Htet Photo">
+        </div>
+
+        <h2>🎨 Software Skills</h2>
+        <div class="contact-icons">
+            <div class="icon photoshop">Ps</div>
+            <div class="icon illustrator">Ai</div>
+            <div class="icon indesign">Id</div>
+            <div class="icon premiere">Pr</div>
+        </div>
+
+        <h2>🔗 Portfolio</h2>
+        <p>
+            <a href="https://www.behance.net/kyawhtet46" target="_blank">🌐 Behance</a> | 
+            <a href="https://www.facebook.com/share/1Gb8tAs1DJ/" target="_blank">📘 Facebook</a>
+        </p>
+
+        <h2>📞 Contact</h2>
+        <div class="contact-icons">
+            <a href="tel:+959740934466"><img src="https://img.icons8.com/ios/50/00ffaa/phone.png" alt="Phone"></a>
+            <a href="viber://chat?number=+959740934466"><img src="https://img.icons8.com/ios/50/00ffaa/viber.png" alt="Viber"></a>
+            <a href="https://t.me/+959740934466"><img src="https://img.icons8.com/ios/50/00ffaa/telegram.png" alt="Telegram"></a>
+        </div>
+
+        <div class="footer">
+            <p>📍 Yangon</p>
+            <p>Design by Kyaw Htet</p>
+        </div>
+    </div>
+</body>
+</html>
